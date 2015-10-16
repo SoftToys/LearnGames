@@ -1,0 +1,52 @@
+﻿
+@{
+    ViewBag.Title = "FindingOddGame";
+}
+
+<h2>FindingOddGame</h2>
+
+<input type="hidden" value="@ViewData["GameTypeId"]" id="gameTypeId" />
+
+
+<div ng-controller="MainCtrl">
+    <h2>{{Name}}</h2>
+    <div class="container">
+        <button ng-repeat="obj in allObjects" class="btn btn-primary ng-scope" ng-click="onObjectClick(obj)" ng-class="obj.Error">
+            {{obj.Name}}<img src="{{obj.ImgUrl}}" />
+        </button>
+    </div>
+
+
+
+    <!-- Button trigger modal -->
+    <button style="display:none" id="dummy-modal-btn" type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal"></button>
+
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">יפה מאוד</h4>
+                </div>
+                <div class="modal-body">
+                    טעויות:{{errors}}
+                </div>
+                <div class="modal-footer">
+                    <a href="/home" class="btn btn-default glyphicon glyphicon-home" aria-hidden="true"></a>
+                    <a href='#' onclick='location.reload(true); return false;' class="btn btn-default glyphicon glyphicon-repeat" aria-hidden="true"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+
+
+
+@section Scripts{
+
+    <script src="~/Scripts/MatchingGameApplication.js"></script>
+}
