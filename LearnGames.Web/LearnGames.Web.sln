@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LearnGames.Web", "LearnGames.Web\LearnGames.Web.csproj", "{31648B6F-C382-4BF6-A20D-59E726D56F48}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LearnGames.Web.Tests", "LearnGames.Web.Tests\LearnGames.Web.Tests.csproj", "{ADABD485-0FB2-42A9-A40A-EC064BD0FFEB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{31648B6F-C382-4BF6-A20D-59E726D56F48}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{31648B6F-C382-4BF6-A20D-59E726D56F48}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{31648B6F-C382-4BF6-A20D-59E726D56F48}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{31648B6F-C382-4BF6-A20D-59E726D56F48}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ADABD485-0FB2-42A9-A40A-EC064BD0FFEB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ADABD485-0FB2-42A9-A40A-EC064BD0FFEB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ADABD485-0FB2-42A9-A40A-EC064BD0FFEB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ADABD485-0FB2-42A9-A40A-EC064BD0FFEB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

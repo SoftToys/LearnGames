@@ -1,0 +1,27 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<div ng-controller="MainCtrl">
+    <div class="row">
+        <div ng-repeat="game in GamesList">
+            <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                    <img src="{{game.ImgUrl}}" alt="{{game.Name}}">
+                    <div class="caption">
+                        <h3>{{game.Name}}</h3>
+                        <p>{{game.Description}}</p>
+                        <p><a href="/Home/MatchingGame/{{game.ID}}" class="btn btn-primary" role="button">Play</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+@section Scripts{
+
+    <script src="~/Scripts/Arena.js"></script>
+}
